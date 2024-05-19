@@ -11,4 +11,5 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 })
 export class AppComponent {
   title = 'hello-angular-frontend';
+  currentYear: number = new Date().getFullYear();
 }

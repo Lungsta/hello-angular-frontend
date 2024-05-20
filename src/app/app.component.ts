@@ -12,6 +12,6 @@ import { CreateEmployeeComponent } from './create-employee/create-employee.compo
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'hello-angular-frontend';
+  title = 'Hello Angular Front End';
   currentYear: number = new Date().getFullYear();
 }

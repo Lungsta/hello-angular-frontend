@@ -27,7 +27,7 @@ export class CreateEmployeeComponent {
   }
 
   goToEmployeeList(){
-    (<any>this.router).navigate(['/employees']);
+    this.router.navigate(['/employees']);
   }
   onSubmit() {
     console.log(this.employee);

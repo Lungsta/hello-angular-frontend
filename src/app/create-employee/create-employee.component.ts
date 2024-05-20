@@ -3,7 +3,7 @@ import { Employee } from '../employee';
 import { FormsModule } from '@angular/forms';
 import { EmployeeService } from '../employee.service';
 import { error } from 'console';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Component({

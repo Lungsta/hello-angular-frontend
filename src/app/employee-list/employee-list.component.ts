@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
   templateUrl: './employee-list.component.html',
   styleUrl: './employee-list.component.css'
 })
-export class EmployeeListComponent  implements OnInit{
+export class EmployeeListComponent  implements OnInit {
 
   employees!: Employee[];
 
@@ -25,12 +25,17 @@ export class EmployeeListComponent  implements OnInit{
     }
     )
   }
+
   goToEmployeeList(){
     (<any>this.router).navigate(['/employees']);
   }
 
   ngOnInit(): void {
     this.getEmployeeList();
+  }
+
+  updateEmployee(id: number) {
+    this.router.navigate(['update-employee', id]);
   }
 
 }
